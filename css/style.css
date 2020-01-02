@@ -1,12 +1,12 @@
-<meta name="viewport" content="width=device-width, initial-scale=1"> /** Added viewport to header **/
-
 * { /** Added box-sizing **/
   box-sizing: border-box;
 }
 
 @media screen and (min-width: 575px) { /** Added media query, line-height, text-align, display, and float information for one column of elements **/
-body {
-  background-color: #dadada;
+
+ body {
+  background-image: url("/images/baku.jpg"), url("../images/london.png"), url("/images/madrid.jpg"), url("/images/rome.jpg") /**NEW Added background images for Baku, London, Madrid, and Rome **/
+  background-color: #dadada
   font-size: 10px;
   line-height: 2em;
   text-align: left;
@@ -22,6 +22,34 @@ body {
     display:inline-block;
     float: left;
   }
+  .preview.baku { /** New Added images, background-size, and height, width, and margin **/
+    background-image: url("/images/baku.jpg");
+    background-size: cover
+    height: 2em;
+    width: 50px;
+    margin: 50px;
+  }
+  .preview.london { /** New Added images, background-size, and height, width, and margin **/
+    background-image: url("../images/london.png");
+    background-size: cover
+    height: 2em;
+    width: 50px;
+    margin: 50px;
+  }
+  .preview.madrid { /** New Added images, background-size, and height, width, and margin **/
+    background-image: url("/images/madrid.jpg");
+    background-size: cover
+    height: 2em;
+    width: 50px;
+    margin: 50px;
+  }
+  .preview.rome { /** New Added images, background-size, and height, width, and margin **/
+    background-image: url("/images/rome.jpg");
+    background-size: cover
+    height: 2em;
+    width: 50px;
+    margin: 50px;
+  }
 }
 
 @media screen and (min-width: 991px) { /** Added media query, div, margin, width, display, and float informationfor four column element in laptop size **/
@@ -31,4 +59,32 @@ body {
     display: inline-block;
     float: left;
   }  
+  .preview.baku { /** New Added images, background-size, and height, width, and margin **/
+    background-image: url("/images/baku.jpg");
+    background-size: cover
+    height: 4em;
+    width: 100px;
+    margin: 75px;
+  }
+  .preview.london { /** New Added images, background-size, and height, width, and margin **/
+    background-image: url("../images/london.png");
+    background-size: cover
+    height: 4em;
+    width: 100px;
+    margin: 75px;
+  }
+  .preview.madrid { /** New Added images, background-size, and height, width, and margin **/
+    background-image: url("/images/madrid.jpg");
+    background-size: cover
+    height: 4em;
+    width: 100px;
+    margin: 75px;
+  }
+  .preview.rome { /** New Added images, background-size, and height, width, and margin **/
+    background-image: url("/images/rome.jpg");
+    background-size: cover
+    height: 4em;
+    width: 100px;
+    margin: 70px;
+  }
 }
