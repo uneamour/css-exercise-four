@@ -8,13 +8,14 @@
   line-height: 2em;
   text-align: left;
   display: block;
- }
+}
  div {
-    margin: 1%; /** New Added missing semicolon **/
-    width: 100%; /** NEW Added missing semicolon; increased width to 100% for one column layout **/
-    display:inline-block;
-    float: left;
- } /** New Moved previews of cities here instead of under the @media groupings **/
+  margin: 1%; /** New Added missing semicolon **/
+  width: 100%; /** NEW Added missing semicolon; increased width to 100% for one column layout **/
+  display:inline-block;
+  float: left;
+  height: 2em; /**NEW Added height **/
+} /** New Moved previews of cities here instead of under the @media groupings **/
  .preview.baku { /** New Added images, background-size, and height, width, and margin **/
     background-image: url("../images/baku.jpg"); /** NEW Added missing .. before /images **/
     background-size: cover; /** New Added missing semicolon **/
