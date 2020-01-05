@@ -2,89 +2,49 @@
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 575px) { /** Added media query, line-height, text-align, display, and float information for one column of elements **/
-
- body {
-  background-image: url("/images/baku.jpg"), url("../images/london.png"), url("/images/madrid.jpg"), url("/images/rome.jpg") /**NEW Added background images for Baku, London, Madrid, and Rome **/
-  background-color: #dadada
+ body { /** New Updated styling - body and div - to reflect one column layout **/
+  background-color: #dadada; /** NEW Added missing semicolon **/
   font-size: 10px;
   line-height: 2em;
   text-align: left;
   display: block;
-  float: left;
  }
-}
+ div {
+    margin: 1%; /** New Added missing semicolon **/
+    width: 100%; /** NEW Added missing semicolon; increased width to 100% for one column layout **/
+    display:inline-block;
+    float: left;
+ } /** New Moved previews of cities here instead of under the @media groupings **/
+ .preview.baku { /** New Added images, background-size, and height, width, and margin **/
+    background-image: url("../images/baku.jpg"); /** NEW Added missing .. before /images **/
+    background-size: cover; /** New Added missing semicolon **/
+ }
+  .preview.london { /** New Added images, background-size, and height, width, and margin **/
+    background-image: url("../images/london.png");
+    background-size: cover; /** New Added missing semicolon **/
+ }
+  .preview.madrid { /** New Added images, background-size, and height, width, and margin **/
+    background-image: url("../images/madrid.jpg"); /** NEW Added missing .. before /images **/
+    background-size: cover; /** New Added missing semicolon **/
+ }
+  .preview.rome { /** New Added images, background-size, and height, width, and margin **/
+    background-image: url("../images/rome.jpg"); /** NEW Added missing .. before /images **/
+    background-size: cover; /** New Added missing semicolon **/
+ }
 
 @media screen and (min-width: 575px) { /** Added media query, div, margin, width, display, and float information for two column elements in tablet size **/
   div {
-    margin: 1%
-    width: 48%
+    margin: 1%; /** New Added missing semicolon **/
+    width: 40%; /** New Added missing semicolon; reduced width size to 40% **/
     display:inline-block;
     float: left;
   }
-  .preview.baku { /** New Added images, background-size, and height, width, and margin **/
-    background-image: url("/images/baku.jpg");
-    background-size: cover
-    height: 2em;
-    width: 50px;
-    margin: 50px;
-  }
-  .preview.london { /** New Added images, background-size, and height, width, and margin **/
-    background-image: url("../images/london.png");
-    background-size: cover
-    height: 2em;
-    width: 50px;
-    margin: 50px;
-  }
-  .preview.madrid { /** New Added images, background-size, and height, width, and margin **/
-    background-image: url("/images/madrid.jpg");
-    background-size: cover
-    height: 2em;
-    width: 50px;
-    margin: 50px;
-  }
-  .preview.rome { /** New Added images, background-size, and height, width, and margin **/
-    background-image: url("/images/rome.jpg");
-    background-size: cover
-    height: 2em;
-    width: 50px;
-    margin: 50px;
-  }
-}
 
 @media screen and (min-width: 991px) { /** Added media query, div, margin, width, display, and float informationfor four column element in laptop size **/
   div {
-    margin: 1%
-    width: 48%
+    margin: 1%; /** New Added missing semicolon **/
+    width: 22%; /** New Added missing semicolon and reduced width to 22% **/
     display: inline-block;
     float: left;
   }  
-  .preview.baku { /** New Added images, background-size, and height, width, and margin **/
-    background-image: url("/images/baku.jpg");
-    background-size: cover
-    height: 4em;
-    width: 100px;
-    margin: 75px;
-  }
-  .preview.london { /** New Added images, background-size, and height, width, and margin **/
-    background-image: url("../images/london.png");
-    background-size: cover
-    height: 4em;
-    width: 100px;
-    margin: 75px;
-  }
-  .preview.madrid { /** New Added images, background-size, and height, width, and margin **/
-    background-image: url("/images/madrid.jpg");
-    background-size: cover
-    height: 4em;
-    width: 100px;
-    margin: 75px;
-  }
-  .preview.rome { /** New Added images, background-size, and height, width, and margin **/
-    background-image: url("/images/rome.jpg");
-    background-size: cover
-    height: 4em;
-    width: 100px;
-    margin: 70px;
-  }
-}
+ 
