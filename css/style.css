@@ -4,7 +4,7 @@
 
  body { /** New Updated styling - body and div - to reflect one column layout **/
   background-color: #dadada; /** NEW Added missing semicolon **/
-  font-size: 10px;
+  font-size: 20px; /** New increased font-size **/
   line-height: 2em;
   text-align: left;
   display: block;
@@ -14,7 +14,7 @@
   width: 100%; /** NEW Added missing semicolon; increased width to 100% for one column layout **/
   display:inline-block;
   float: left;
-  height: 2em; /**NEW Added height **/
+  height: 360px; /**NEW Added height **/
 } /** New Moved previews of cities here instead of under the @media groupings **/
  .preview.baku { /** New Added images, background-size, and height, width, and margin **/
     background-image: url("../images/baku.jpg"); /** NEW Added missing .. before /images **/
